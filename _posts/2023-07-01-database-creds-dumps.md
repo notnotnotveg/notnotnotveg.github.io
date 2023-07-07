@@ -8,7 +8,7 @@ tags:
   - Hashcat
 ---
 
-The following is a comilation of queries to list database user hashes, which are stored locally in tables. The hashes obtained can be cracked using password cracking tools like Hashcat.
+The following is a compilation of queries to list database user hashes, which are stored locally in tables. The hashes obtained can be cracked using password cracking tools like Hashcat.
 
 ### MySQL :
 #### mysql_native_password :
