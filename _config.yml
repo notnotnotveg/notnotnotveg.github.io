@@ -69,9 +69,11 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
     - label: "Bugcrowd"
-      icon: "fab fa-fw fa-bugcrowd"
+      icon: "/assets/images/bugcrowd.png"
       url: "https://bugcrowd.com/notnotnotveg"
-
+    - label: "HackerOne"
+      icon: "/assets/images/hackerone.png"
+      url: "https://hackerone.com/notnotnotveg"
 footer:
   links:
     - label: "Twitter"
@@ -80,6 +82,12 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
+    - label: "Bugcrowd"
+      icon: "/assets/images/bugcrowd.png"
+      url: "https://bugcrowd.com/notnotnotveg"
+    - label: "HackerOne"
+      icon: "/assets/images/hackerone.png"
+      url: "https://hackerone.com/notnotnotveg"
 
 defaults:
   # _posts
