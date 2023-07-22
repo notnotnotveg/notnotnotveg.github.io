@@ -23,6 +23,7 @@ twitter_username: notnotnotveg
 github_username: notnotnotveg
 minimal_mistakes_skin: dark
 search: true
+google_analytics: G-ZHDS9F2TCP
 
 # Build settings
 markdown: kramdown
