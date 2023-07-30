@@ -7,7 +7,7 @@ Your friendly neighborhood Internet squirrel chaser, helping secure products and
 
 In the dark hours, I find myself chasing squirrels by scouring the Internet for lesser hunted for issues. 
 
-Some of the organizations I have reported bugs and helped secure :
+Some of the organizations I have reported bugs to and have been publicly recognized for :
 
 * [Amazon](https://hackerone.com/notnotnotveg?type=user)
 * [Blue Jeans Networks](https://bugcrowd.com/bluejeans/hall-of-fame)
