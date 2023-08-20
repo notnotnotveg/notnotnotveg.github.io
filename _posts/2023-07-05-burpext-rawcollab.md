@@ -53,7 +53,7 @@ class BurpExtender(IBurpExtender, IBurpCollaboratorInteraction, IBurpCollaborato
 Navigate to Extensions > Installed > Burp Extensions and click on Add.
 Select the Python file for the Extension and select a file to save the output.
 
-[2023-08-05-burpsuite_rawcollab-1](https://raw.githubusercontent.com/notnotnotveg/notnotnotveg.github.io/72322d9bc97c1ec827aac89bd428601573d5b640/assets/images/2023-08-05-burpsuite_rawcollab-1.png)
+[2023-08-05-burpsuite_rawcollab-1](assets/images/2023-08-05-burpsuite_rawcollab-1.png)
 
 A new Extension called "Raw Collaborator" should now get added to the list.
 ### Test the Extension
