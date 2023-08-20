@@ -1,5 +1,5 @@
 ---
-title: "Burp Suite Extension : Raw Collaborator"
+title: "Burp Suite Extension - Raw Collaborator"
 date: 2023-08-T05:00:00-01:00
 categories:
   - blog
@@ -18,7 +18,7 @@ This plugin can prove itself to be useful when large number of Burp Suite Collab
 
 ### Create Extension File
 Create a local `raw_collaborator.py` file and save it with the following code :
-```python
+```
 __author__ = 'notnotnotveg (https://wiki.notveg.ninja)'
 __date__ = '20230301'
 __version__ = '1.0'
