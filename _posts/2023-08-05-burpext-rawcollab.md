@@ -10,7 +10,6 @@ toc_label: BurpSuite
 toc_icon: "bug"
 ---
 
-## Burp Suite Extension : Raw Collaborator
 
 The following describes the set up and usage of a Burp Suite Extension I wrote, that creates a new Collaborator URL and dumps the raw Interaction transactions as text to the console of the plugin, or allows the log to be written to a file on the system that can be further analyzed.
 
