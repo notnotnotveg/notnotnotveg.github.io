@@ -53,13 +53,13 @@ class BurpExtender(IBurpExtender, IBurpCollaboratorInteraction, IBurpCollaborato
 Navigate to Extensions > Installed > Burp Extensions and click on Add.
 Select the Python file for the Extension and select a file to save the output.
 
-[2023-08-05-burpsuite_rawcollab-1](assets/images/2023-08-05-burpsuite_rawcollab-1.png)
+[2023-08-05-burpsuite_rawcollab-1](/assets/images/2023-08-05-burpsuite_rawcollab-1.png)
 
 A new Extension called "Raw Collaborator" should now get added to the list.
 ### Test the Extension
 
 One the extension is loaded, a new Collaborator URL gets automatically created and printed on the Output of the Extension. As an example : 
-[2023-08-05-burpsuite_rawcollab-2](https://raw.githubusercontent.com/notnotnotveg/notnotnotveg.github.io/72322d9bc97c1ec827aac89bd428601573d5b640/assets/images/2023-08-05-burpsuite_rawcollab-2.png)
+[2023-08-05-burpsuite_rawcollab-2](/assets/images/2023-08-05-burpsuite_rawcollab-2.png)
 
 A sample way to test the plugin by making DNS interactions to it using bash : 
 ```
