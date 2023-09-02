@@ -18,6 +18,7 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * [Microsoft](https://msrc.microsoft.com/update-guide/acknowledgement)
 * [Nokia](https://www.nokia.com/notices/responsible-disclosure/)
 * [Oracle](https://www.oracle.com/security-alerts/cpujul2023.html#:~:text=Askari-,notnotnotveg,-Oday)
+* [The Standard](https://www.standard.com/get-to-know-standard/responsible-disclosure-program)
 * [United Airlines](https://bugcrowd.com/united-vdp/hall-of-fame)
 * etc.
 
