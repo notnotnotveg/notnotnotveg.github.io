@@ -13,6 +13,7 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * [Blue Jeans Networks](https://bugcrowd.com/bluejeans/hall-of-fame)
 * [Cisco](https://bugcrowd.com/ciscosecurity/hall-of-fame)
 * [The Coca-Cola Company](https://bugcrowd.com/coca-cola/hall-of-fame)
+* [U.S. Department of Commerce](https://doc.responsibledisclosure.com/hc/en-us/articles/10801394414227#:~:text=twitter.com/-,notnotnotveg,-github.com/notnotnotveg)
 * [U.S. Department of Homeland Security](https://bugcrowd.com/dhs-vdp/hall-of-fame)
 * [Equifax](https://hackerone.com/notnotnotveg?type=user)
 * [Google](https://bughunters.google.com/profile/977c1689-44db-4d53-95f9-c97dbde67dfb)
