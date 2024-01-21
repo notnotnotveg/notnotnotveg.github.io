@@ -27,3 +27,4 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 
 CVE Contributions : 
 * [CVE-2023-38523](https://wiki.notveg.ninja/blog/CVE-2023-38523/)
+* [CVE-2023-39854](https://wiki.notveg.ninja/blog/CVE-2023-39854/)
