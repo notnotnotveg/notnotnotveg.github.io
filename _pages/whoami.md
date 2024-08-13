@@ -17,6 +17,7 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * [U.S. Department of Homeland Security](https://bugcrowd.com/dhs-vdp/hall-of-fame)
 * [Equifax](https://hackerone.com/notnotnotveg?type=user)
 * [Google](https://bughunters.google.com/profile/977c1689-44db-4d53-95f9-c97dbde67dfb)
+* [Informatica](https://www.informatica.com/trust-center/security-researcher-hall-of-fame.html#:~:text=Tabassum-,notnotnotveg,-Jann%20Moon)
 * [Mercedes-Benz](https://www.mercedes-benz.com/en/whitehat/#:~:text=LinkedIn-,notnotnotveg,-%2D%20Github)
 * [Microsoft](https://msrc.microsoft.com/update-guide/acknowledgement)
 * [Nokia](https://www.nokia.com/notices/responsible-disclosure/)
@@ -26,5 +27,6 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * etc.
 
 CVE Contributions : 
+* [CVE-2024-26367](https://wiki.notveg.ninja/blog/CVE-2024-26367/)
 * [CVE-2023-38523](https://wiki.notveg.ninja/blog/CVE-2023-38523/)
 * [CVE-2023-39854](https://wiki.notveg.ninja/blog/CVE-2023-39854/)
