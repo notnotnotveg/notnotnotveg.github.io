@@ -28,13 +28,16 @@ Directly quoting the Kubecost documenation:
 
 ### Enumeration 
 
-Kubecost dashboards accessible to the public Internet can be identified on Shodan using the query:
+Kubecost dashboards accessible to the public Internet can be identified on (Shodan)[https://www.shodan.io/] using the query:
 
 ```
 http.title:"Kubecost"
 http.favicon.hash:611531125
 ```
 
+A [nuclei](https://docs.projectdiscovery.io/tools/nuclei) template to identify unauthenticated Kubecost dasboards can be found here: 
+
+[unauth-kubecost](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/misconfiguration/unauth-kubecost.yaml).
 
 ### Exploitation 
 Kubecost is recommended to be run inside trusted networks, since the service does not support authentication and authorization on the dashboard by default. However, in the case that such a Kubecost dashboard is accessible over the network, the following undocumented endpoints (at the time this was reported) are accessible: 
