@@ -28,7 +28,7 @@ Directly quoting the Kubecost documenation:
 
 ### Enumeration 
 
-Kubecost dashboards accessible to the public Internet can be identified on (Shodan)[https://www.shodan.io/] using the query:
+Kubecost dashboards accessible to the public Internet can be identified on [Shodan](https://www.shodan.io/) using the query:
 
 ```
 http.title:"Kubecost"
@@ -36,7 +36,6 @@ http.favicon.hash:611531125
 ```
 
 A [nuclei](https://docs.projectdiscovery.io/tools/nuclei) template to identify unauthenticated Kubecost dasboards can be found here: 
-
 [unauth-kubecost](https://github.com/projectdiscovery/nuclei-templates/blob/main/http/misconfiguration/unauth-kubecost.yaml).
 
 ### Exploitation 
