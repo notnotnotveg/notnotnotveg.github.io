@@ -19,16 +19,19 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * [U.S. Department of Homeland Security](https://bugcrowd.com/dhs-vdp/hall-of-fame)
 * [Equifax](https://hackerone.com/notnotnotveg?type=user)
 * [Google](https://bughunters.google.com/profile/977c1689-44db-4d53-95f9-c97dbde67dfb)
+* [IBM](https://www.ibm.com/support/pages/ibm-product-security-incident-response-team-news#:~:text=Credit%20to-,notnotnotveg,-(X%20%2D%20formerly)
 * [Informatica](https://www.informatica.com/trust-center/security-researcher-hall-of-fame.html#:~:text=Tabassum-,notnotnotveg,-Jann%20Moon)
 * [Mercedes-Benz](https://www.mercedes-benz.com/en/whitehat/#:~:text=LinkedIn-,notnotnotveg,-%2D%20Github)
 * [Microsoft](https://msrc.microsoft.com/update-guide/acknowledgement)
 * [Nokia](https://www.nokia.com/notices/responsible-disclosure/)
+* [PepsiCo](https://hackerone.com/notnotnotveg?type=user#:~:text=View%20more-,Testimonials,-When%20asked%20about)
 * [Oracle](https://www.oracle.com/security-alerts/cpujul2023.html#:~:text=Askari-,notnotnotveg,-Oday)
 * [The Standard](https://www.standard.com/get-to-know-standard/responsible-disclosure-program)
 * [United Airlines](https://bugcrowd.com/united-vdp/hall-of-fame)
 * etc.
 
 CVE Contributions : 
+* [CVE-2024-42450](https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2024/va-24-325-01.json#L199)
 * [CVE-2024-26367](https://wiki.notveg.ninja/blog/CVE-2024-26367/)
 * [CVE-2023-38523](https://wiki.notveg.ninja/blog/CVE-2023-38523/)
 * [CVE-2023-39854](https://wiki.notveg.ninja/blog/CVE-2023-39854/)
