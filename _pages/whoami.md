@@ -11,6 +11,7 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 
 * [Amazon](https://hackerone.com/notnotnotveg?type=user)
 * [Blue Jeans Networks](https://bugcrowd.com/bluejeans/hall-of-fame)
+* [Broadcom](https://www.broadcom.com/support/security-center/security-thanks)
 * [Cisco](https://bugcrowd.com/ciscosecurity/hall-of-fame)
 * [Drexel University](https://drexel.edu/it/security/services-processes/bug-bounty/)
 * [Freddie Mac](https://bugcrowd.com/engagements/freddie-mac-vdp-ess/hall_of_fames)
