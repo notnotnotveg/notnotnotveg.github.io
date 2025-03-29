@@ -25,6 +25,7 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * [JP Morgan Chase](https://responsibledisclosure.jpmorganchase.com/hc/en-us/articles/360023828114-Recognition-for-Responsible-Disclosures)
 * [Mercedes-Benz](https://www.mercedes-benz.com/en/whitehat/#:~:text=LinkedIn-,notnotnotveg,-%2D%20Github)
 * [Microsoft](https://msrc.microsoft.com/update-guide/acknowledgement)
+* [NFL](https://bugcrowd.com/engagements/nfl-vdp-pro/hall_of_fames)
 * [Nokia](https://www.nokia.com/notices/responsible-disclosure/)
 * [PepsiCo](https://hackerone.com/notnotnotveg?type=user#:~:text=View%20more-,Testimonials,-When%20asked%20about)
 * [Oracle](https://www.oracle.com/security-alerts/cpujul2023.html#:~:text=Askari-,notnotnotveg,-Oday)
