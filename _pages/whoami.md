@@ -34,6 +34,8 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * etc.
 
 CVE Contributions : 
+* [CVE-2025-6185](https://nvd.nist.gov/vuln/detail/CVE-2025-6185) / [ICSA-25-198-01](https://www.cisa.gov/news-events/ics-advisories/icsa-25-198-01)
+* [CVE-2025-0630](https://nvd.nist.gov/vuln/detail/CVE-2025-0630) / [ICSA-25-035-01](https://www.cisa.gov/news-events/ics-advisories/icsa-25-035-01)
 * [CVE-2024-42450](https://github.com/cisagov/CSAF/blob/develop/csaf_files/IT/white/2024/va-24-325-01.json#L199)
 * [CVE-2024-26367](https://wiki.notveg.ninja/blog/CVE-2024-26367/)
 * [CVE-2023-38523](https://wiki.notveg.ninja/blog/CVE-2023-38523/)
