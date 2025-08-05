@@ -123,5 +123,5 @@ tag_archive:
   type: liquid
   path: /tags/
 
-logo: /assets/images/favicon.ico
+# logo: /assets/images/favicon.ico
 favicon: /assets/images/favicon.ico
