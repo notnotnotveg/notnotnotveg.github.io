@@ -9,6 +9,7 @@ In the dark hours, I find myself chasing squirrels by scouring the Internet for 
 
 Some of the organizations I have reported bugs to and have been publicly recognized for :
 
+* [Accenture](https://accenture.responsibledisclosure.com/hc/en-us/articles/360040573233-Acknowledgments)
 * [Amazon](https://hackerone.com/notnotnotveg?type=user)
 * [Blue Jeans Networks](https://bugcrowd.com/bluejeans/hall-of-fame)
 * [Broadcom](https://www.broadcom.com/support/security-center/security-thanks)
