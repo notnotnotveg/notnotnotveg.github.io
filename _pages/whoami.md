@@ -28,6 +28,7 @@ Some of the organizations I have reported bugs to and have been publicly recogni
 * [Microsoft](https://msrc.microsoft.com/update-guide/acknowledgement)
 * [NFL](https://bugcrowd.com/engagements/nfl-vdp-pro/hall_of_fames)
 * [Nokia](https://www.nokia.com/notices/responsible-disclosure/)
+* [Palo Alto Networks](https://paloaltonetworks.responsibledisclosure.com/hc/en-us/articles/360037368173-Acknowledgments)
 * [PepsiCo](https://hackerone.com/notnotnotveg?type=user#:~:text=View%20more-,Testimonials,-When%20asked%20about)
 * [Oracle](https://www.oracle.com/security-alerts/cpujul2023.html#:~:text=Askari-,notnotnotveg,-Oday)
 * [The Standard](https://www.standard.com/get-to-know-standard/responsible-disclosure-program)
