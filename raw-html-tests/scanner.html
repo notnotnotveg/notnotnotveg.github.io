@@ -24,6 +24,7 @@
     <br><br><br><br><br><br><br><br><br><br>
     <h1>Port Scanner</h1>
     <p><em>PoC by notnotnotveg</em></p>
+    <p>This script currently scans port range tcp/30000 to tcp/31000</p>
     <button onclick="useFetch()">Use Fetch</button>
     <button onclick="useXHR()">Use XHR</button>
     <div id="results"></div>
@@ -36,7 +37,7 @@
 
         async function useXHR() {
             document.getElementById('results').innerHTML = '';
-            const h=prompt("Host:","localhost");const r=await Promise.all(Array.from({length:100},(_,i)=>30000+i).map(async p=>{const t=Date.now();try{await new Promise((res,rej)=>{const x=new XMLHttpRequest();x.onload=()=>res();x.onerror=()=>rej(new Error('closed'));x.ontimeout=()=>rej(new Error('AbortError'));x.open('GET',`http://${h}:${p}`);x.timeout=2000;x.send()});return{p,s:'open',t:Date.now()-t}}catch(e){return{p,s:e.message==='AbortError'?'timeout':'closed',t:Date.now()-t}}}));r.forEach(x=>x.s==='timeout'&&(document.getElementById('results').innerHTML+=`Port ${x.p}: ${x.s} (${x.t}ms)<br>`));return r;
+            const h=prompt("Host:","localhost");const r=await Promise.all(Array.from({length:1000},(_,i)=>30000+i).map(async p=>{const t=Date.now();try{await new Promise((res,rej)=>{const x=new XMLHttpRequest();x.onload=()=>res();x.onerror=()=>rej(new Error('closed'));x.ontimeout=()=>rej(new Error('AbortError'));x.open('GET',`http://${h}:${p}`);x.timeout=2000;x.send()});return{p,s:'open',t:Date.now()-t}}catch(e){return{p,s:e.message==='AbortError'?'timeout':'closed',t:Date.now()-t}}}));r.forEach(x=>x.s==='timeout'&&(document.getElementById('results').innerHTML+=`Port ${x.p}: ${x.s} (${x.t}ms)<br>`));return r;
         }
     </script>
 </body>
