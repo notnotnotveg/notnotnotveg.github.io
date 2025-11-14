@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LNAlyzer – Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      max-width: 800px;
+      margin: auto;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>LNAlyzer – Privacy Policy</h1>
+  <p><strong>Last updated:</strong> November 2025</p>
+
+  <h2>Overview</h2>
+  <p>
+    LNAlyzer is a Chrome extension that helps users view and understand Local Network Access (LNA) requests
+    made by websites they visit. The extension runs entirely on the user’s device and does not transmit any
+    information to external servers.
+  </p>
+
+  <h2>Information Collection and Use</h2>
+  <p><strong>LNAlyzer does not collect, store, transmit, or share any personal data.</strong></p>
+  <p>The extension processes network request details locally within your browser using the 
+  <code>webRequest</code> API. This data is displayed only to you and is never sent to the developer or any third party.</p>
+
+  <h2>Permissions Explained</h2>
+
+  <h3>Host Permissions (<code>&lt;all_urls&gt;</code>)</h3>
+  <p>
+    Required to detect when a website attempts to make a Local Network Access request.  
+    The extension does not access or modify website content.
+  </p>
+
+  <h3><code>webRequest</code> Permission</h3>
+  <p>
+    Used solely to observe LNA-related requests and display them in the extension’s interface.
+    The data remains on your device and is never transmitted externally.
+  </p>
+
+  <h3><code>tabs</code> Permission</h3>
+  <p>
+    Used only to identify which tab initiated a request so it can be displayed to you
+    for context. No browsing history is collected or stored.
+  </p>
+
+  <h2>Data Storage</h2>
+  <p>
+    LNAlyzer does not store any logs or data outside of your browser’s memory.
+    Closing the popup or tab clears the displayed information.
+  </p>
+
+  <h2>Third-Party Sharing</h2>
+  <p>
+    LNAlyzer does not share any information with third parties. It has no analytics,
+    tracking scripts, or external communication of any kind.
+  </p>
+
+  <h2>Changes to This Policy</h2>
+  <p>
+    If changes to this privacy policy are made, an updated version will be published on this page.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    If you have any questions about this privacy policy, you may contact the developer at:<br>
+    <a href="mailto:chrome@notveg.ninja">chrome@notveg.ninja</a>
+  </p>
+</body>
+</html>
