@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Port Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 20px;
+            border-top: 2px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br><br>
+    <h1>Port Scanner</h1>
+    <p><em>PoC by notnotnotveg</em></p>
+    <p>This script currently scans port range tcp/30000 to tcp/31000</p>
+    <button onclick="useFetch()">Use Fetch</button>
+    <button onclick="useXHR()">Use XHR</button>
+    <div id="results"></div>
+
+    <script>
+async function useFetch() {
+    document.getElementById('results').innerHTML = '';
+    const h = prompt("Host:", "localhost");
+    const batchSize = 500; // Adjust this number based on performance
+    const allResults = [];
+    
+    for (let start = 0; start < 65536; start += batchSize) {
+        const end = Math.min(start + batchSize, 65536);
+        document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
+        
+        const batch = await Promise.all(
+            Array.from({length: end - start}, (_, i) => start + i).map(async p => {
+                const c = new AbortController();
+                setTimeout(() => c.abort(), 2000);
+                const t = Date.now();
+                try {
+                    await fetch(`http://${h}:${p}`, {mode: 'no-cors', signal: c.signal});
+                    return {p, s: 'open', t: Date.now() - t};
+                } catch(e) {
+                    return {p, s: e.name === 'AbortError' ? 'Open due to timeout' : 'closed', t: Date.now() - t};
+                }
+            })
+        );
+        
+        allResults.push(...batch);
+        batch.filter(x => x.s !== 'closed').forEach(x => {
+            document.getElementById('results').innerHTML += `Port ${x.p}: ${x.s} (${x.t}ms)<br>`;
+        });
+    }
+    
+    return allResults;
+}
+
+async function useXHR() {
+    document.getElementById('results').innerHTML = '';
+    const h = prompt("Host:", "localhost");
+    const batchSize = 500;
+    const allResults = [];
+    
+    for (let start = 0; start < 65536; start += batchSize) {
+        const end = Math.min(start + batchSize, 65536);
+        document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
+        
+        const batch = await Promise.all(
+            Array.from({length: end - start}, (_, i) => start + i).map(async p => {
+                const t = Date.now();
+                try {
+                    await new Promise((res, rej) => {
+                        const x = new XMLHttpRequest();
+                        x.onload = () => res();
+                        x.onerror = () => rej(new Error('closed'));
+                        x.ontimeout = () => rej(new Error('AbortError'));
+                        x.open('GET', `http://${h}:${p}`);
+                        x.timeout = 2000;
+                        x.send();
+                    });
+                    return {p, s: 'open', t: Date.now() - t};
+                } catch(e) {
+                    return {p, s: e.message === 'AbortError' ? 'timeout' : 'closed', t: Date.now() - t};
+                }
+            })
+        );
+        
+        allResults.push(...batch);
+        batch.filter(x => x.s === 'timeout').forEach(x => {
+            document.getElementById('results').innerHTML += `Port ${x.p}: ${x.s} (${x.t}ms)<br>`;
+        });
+    }
+    
+    return allResults;
+}
+    </script>
+</body>
+</html>
