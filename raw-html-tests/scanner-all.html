@@ -38,7 +38,7 @@ async function useFetch() {
     
     for (let start = 0; start < 65536; start += batchSize) {
         const end = Math.min(start + batchSize, 65536);
-        document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
+        // document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
         
         const batch = await Promise.all(
             Array.from({length: end - start}, (_, i) => start + i).map(async p => {
@@ -71,7 +71,7 @@ async function useXHR() {
     
     for (let start = 0; start < 65536; start += batchSize) {
         const end = Math.min(start + batchSize, 65536);
-        document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
+        // document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
         
         const batch = await Promise.all(
             Array.from({length: end - start}, (_, i) => start + i).map(async p => {
