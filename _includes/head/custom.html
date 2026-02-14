@@ -6,28 +6,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Share+Tech&display=swap" rel="stylesheet">
 
-
 <style>
-/* Apply Share Tech to body (inherits to everything) */
-body {
+/* Apply Share Tech to everything */
+body,
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.page__lead,
+.page__content,
+.archive__item-title,
+.archive__item-excerpt,
+.site-title,
+.greedy-nav,
+.masthead,
+.masthead__menu-item,
+.sidebar,
+.author__bio,
+.author__name,
+.page__footer,
+.page__meta,
+p, a, span, div, li, ul, ol, td, th,
+.btn, .notice {
   font-family: 'Share Tech', sans-serif !important;
 }
 
-/* Code blocks get the mono version */
+/* Code blocks - Share Tech Mono */
 code, pre, .highlight {
   font-family: 'Share Tech Mono', monospace !important;
 }
 
-/* Preserve Font Awesome icons */
-.fa, .fab, .fas, .far, .fal, .fad,
-[class^="fa-"], [class*=" fa-"],
-i[class^="fa-"], i[class*=" fa-"] {
-  font-family: "Font Awesome 5 Free" !important;
-  font-weight: 900;
+/* CRITICAL: Preserve Font Awesome icons */
+i[class^="fa"],
+i[class*=" fa"],
+.fa, .fas, .far, .fab, .fal, .fad,
+span[class^="fa"],
+span[class*=" fa"] {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "Font Awesome 5 Free", "Font Awesome 5 Brands", "FontAwesome" !important;
+  font-style: normal !important;
 }
 
 .fab {
-  font-family: "Font Awesome 5 Brands" !important;
-  font-weight: 400;
+  font-weight: 400 !important;
+}
+
+.fas {
+  font-weight: 900 !important;
 }
 </style>
