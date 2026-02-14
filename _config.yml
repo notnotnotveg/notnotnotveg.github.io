@@ -81,6 +81,9 @@ author:
     - label: "x"
       icon: "fa-brands fa-x-twitter"
       url: "https://x.com/notnotnotveg"
+    - label: "Google VRP"
+      icon: "fa fa-google"
+      url: "https://bughunters.google.com/profile/977c1689-44db-4d53-95f9-c97dbde67dfb/awards"
 footer:
   links:
     - label: "GitHub"
@@ -95,6 +98,9 @@ footer:
     - label: "x"
       icon: "fa-brands fa-x-twitter"
       url: "https://x.com/notnotnotveg"
+    - label: "Google VRP"
+      icon: "fa fa-google"
+      url: "https://bughunters.google.com/profile/977c1689-44db-4d53-95f9-c97dbde67dfb/awards"
 
 defaults:
   # _posts
