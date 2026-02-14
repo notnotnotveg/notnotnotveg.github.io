@@ -24,18 +24,24 @@ code.language-plaintext {
   font-family: 'Courier New', monospace;
 }
 
+
 /* CVE callout boxes */
+/*
 .notice--warning {
   background-color: #3d1e1e; /* Dark red for vulnerabilities */
+/*
   border-left-color: #ff4444;
 }
 
+/*
 .notice--info {
   background-color: #1e2a3d; /* Dark blue for info */
+/*
   border-left-color: #4488ff;
 }
 
 /* Better headers for posts */
+/*
 .page__title {
   font-family: 'Monaco', 'Courier New', monospace;
   text-transform: uppercase;
@@ -43,6 +49,7 @@ code.language-plaintext {
 }
 
 /* Security badge styling */
+/*
 .security-badge {
   display: inline-block;
   padding: 4px 8px;
