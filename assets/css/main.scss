@@ -1,0 +1,55 @@
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* Custom security blog styling */
+
+/* Better code blocks */
+.highlight {
+  border-left: 3px solid #00ff00; /* Matrix green accent */
+  background: #0d1117; /* GitHub dark background */
+
+  pre {
+    background: transparent;
+  }
+}
+
+/* Terminal-style inline code */
+code.language-plaintext {
+  background: #1e1e1e;
+  color: #00ff00;
+  border: 1px solid #333;
+  font-family: 'Courier New', monospace;
+}
+
+/* CVE callout boxes */
+.notice--warning {
+  background-color: #3d1e1e; /* Dark red for vulnerabilities */
+  border-left-color: #ff4444;
+}
+
+.notice--info {
+  background-color: #1e2a3d; /* Dark blue for info */
+  border-left-color: #4488ff;
+}
+
+/* Better headers for posts */
+.page__title {
+  font-family: 'Monaco', 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Security badge styling */
+.security-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #ff4444;
+  color: white;
+  border-radius: 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-right: 8px;
+}
