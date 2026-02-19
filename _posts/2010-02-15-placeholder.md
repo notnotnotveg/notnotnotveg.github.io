@@ -433,55 +433,82 @@ tst3
 ### test5 
 test
 
-<div style="background:#0a0a0f; border:1px solid #222230; border-radius:10px; padding:32px 24px; margin:1.5em 0;">
+<div style="background:#0a0a0f; border:1px solid #222230; border-radius:10px; padding:16px; margin:1.5em 0;">
 <svg
-  viewBox="0 0 600 540"
+  viewBox="0 0 400 420"
   xmlns="http://www.w3.org/2000/svg"
-  style="width:100%; font-family:'Share Tech', sans-serif; overflow:visible;"
+  style="width:100%; font-family:'Share Tech', sans-serif; display:block;"
 >
   <defs>
     <marker id="arr" markerWidth="7" markerHeight="7" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#3a3a55"/>
+      <path d="M0,0 L0,6 L6,3 z" fill="#4a4a6a"/>
     </marker>
   </defs>
 
-  <line x1="300" y1="46" x2="300" y2="100" stroke="#3a3a55" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="300" y1="130" x2="300" y2="184" stroke="#3a3a55" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="300" y1="214" x2="300" y2="244" stroke="#3a3a55" stroke-width="1.5"/>
-  <line x1="148" y1="244" x2="452" y2="244" stroke="#3a3a55" stroke-width="1.5"/>
-  <line x1="148" y1="244" x2="148" y2="278" stroke="#3a3a55" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="452" y1="244" x2="452" y2="278" stroke="#3a3a55" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="148" y1="312" x2="148" y2="346" stroke="#3a3a55" stroke-width="1.5"/>
-  <line x1="76" y1="346" x2="220" y2="346" stroke="#3a3a55" stroke-width="1.5"/>
-  <line x1="76" y1="346" x2="76" y2="380" stroke="#3a3a55" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="220" y1="346" x2="220" y2="380" stroke="#3a3a55" stroke-width="1.5" marker-end="url(#arr)"/>
+  <!-- Page Loaded → Internal Resource Access -->
+  <line x1="200" y1="36" x2="200" y2="68" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <text x="100" y="268" fill="#6b6b88" font-size="12" text-anchor="middle">Port Open</text>
-  <text x="506" y="268" fill="#6b6b88" font-size="12" text-anchor="middle">Port Closed</text>
-  <text x="38"  y="372" fill="#6b6b88" font-size="12" text-anchor="middle">Allow</text>
-  <text x="264" y="372" fill="#6b6b88" font-size="12" text-anchor="middle">Deny</text>
+  <!-- Internal Resource Access → Port Probed -->
+  <line x1="200" y1="96" x2="200" y2="128" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="196" y="16" width="208" height="30" rx="6" fill="#111115" stroke="#333345" stroke-width="1.5"/>
-  <text x="300" y="31" fill="#d4d4e8" font-size="14" text-anchor="middle" dominant-baseline="middle">Page Loaded</text>
+  <!-- Port Probed → fork stem -->
+  <line x1="200" y1="156" x2="200" y2="178" stroke="#4a4a6a" stroke-width="1.5"/>
 
-  <rect x="96" y="100" width="408" height="30" rx="6" fill="#111115" stroke="#333345" stroke-width="1.5"/>
-  <text x="300" y="115" fill="#d4d4e8" font-size="14" text-anchor="middle" dominant-baseline="middle">Internal Resource Access Initiated</text>
+  <!-- Horizontal fork bar -->
+  <line x1="90" y1="178" x2="310" y2="178" stroke="#4a4a6a" stroke-width="1.5"/>
 
-  <rect x="196" y="184" width="208" height="30" rx="6" fill="#0d1f14" stroke="#39ff7e" stroke-width="1.5"/>
-  <text x="300" y="199" fill="#39ff7e" font-size="14" text-anchor="middle" dominant-baseline="middle">Port Probed</text>
+  <!-- Left drop → User Prompted -->
+  <line x1="90" y1="178" x2="90" y2="204" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="54" y="278" width="188" height="34" rx="6" fill="#111115" stroke="#555568" stroke-width="1.5"/>
-  <text x="148" y="295" fill="#c4c4dc" font-size="14" text-anchor="middle" dominant-baseline="middle">User Prompted</text>
+  <!-- Right drop → Preflight fails Immediately -->
+  <line x1="310" y1="178" x2="310" y2="204" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
 
-  <rect x="330" y="278" width="244" height="34" rx="6" fill="#111115" stroke="#333345" stroke-width="1.5"/>
-  <text x="452" y="295" fill="#6b6b88" font-size="14" text-anchor="middle" dominant-baseline="middle">Preflight fails - Immediately</text>
+  <!-- User Prompted → sub-fork stem -->
+  <line x1="90" y1="236" x2="90" y2="258" stroke="#4a4a6a" stroke-width="1.5"/>
 
-  <rect x="16" y="380" width="120" height="34" rx="6" fill="#111115" stroke="#555568" stroke-width="1.5"/>
-  <text x="76" y="397" fill="#c4c4dc" font-size="14" text-anchor="middle" dominant-baseline="middle">Preflight Sent</text>
+  <!-- Sub-fork horizontal bar -->
+  <line x1="40" y1="258" x2="140" y2="258" stroke="#4a4a6a" stroke-width="1.5"/>
 
-  <rect x="154" y="378" width="132" height="48" rx="6" fill="#111115" stroke="#333345" stroke-width="1.5"/>
-  <text x="220" y="396" fill="#6b6b88" font-size="14" text-anchor="middle" dominant-baseline="middle">Preflight fails</text>
-  <text x="220" y="416" fill="#6b6b88" font-size="14" text-anchor="middle" dominant-baseline="middle">CORS Error</text>
+  <!-- Left drop → Preflight Sent -->
+  <line x1="40" y1="258" x2="40" y2="284" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Right drop → CORS Error -->
+  <line x1="140" y1="258" x2="140" y2="284" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Edge labels -->
+  <text x="55" y="197" fill="#6b6b88" font-size="10" text-anchor="middle">Port Open</text>
+  <text x="348" y="197" fill="#6b6b88" font-size="10" text-anchor="middle">Port Closed</text>
+  <text x="18" y="277" fill="#6b6b88" font-size="10" text-anchor="middle">Allow</text>
+  <text x="164" y="277" fill="#6b6b88" font-size="10" text-anchor="middle">Deny</text>
+
+  <!-- Page Loaded -->
+  <rect x="120" y="10" width="160" height="26" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
+  <text x="200" y="23" fill="#ffffff" font-size="13" text-anchor="middle" dominant-baseline="middle">Page Loaded</text>
+
+  <!-- Internal Resource Access Initiated -->
+  <rect x="44" y="68" width="312" height="28" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
+  <text x="200" y="82" fill="#ffffff" font-size="13" text-anchor="middle" dominant-baseline="middle">Internal Resource Access Initiated</text>
+
+  <!-- Port Probed — green accent -->
+  <rect x="110" y="128" width="180" height="28" rx="5" fill="#0d1f14" stroke="#39ff7e" stroke-width="1.5"/>
+  <text x="200" y="142" fill="#39ff7e" font-size="13" text-anchor="middle" dominant-baseline="middle">Port Probed</text>
+
+  <!-- User Prompted -->
+  <rect x="18" y="204" width="144" height="32" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
+  <text x="90" y="220" fill="#ffffff" font-size="13" text-anchor="middle" dominant-baseline="middle">User Prompted</text>
+
+  <!-- Preflight fails - Immediately -->
+  <rect x="218" y="204" width="184" height="32" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
+  <text x="310" y="220" fill="#9a9ab8" font-size="13" text-anchor="middle" dominant-baseline="middle">Preflight fails - Immediately</text>
+
+  <!-- Preflight Sent -->
+  <rect x="6" y="284" width="68" height="32" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
+  <text x="40" y="300" fill="#ffffff" font-size="13" text-anchor="middle" dominant-baseline="middle">Preflight Sent</text>
+
+  <!-- Preflight fails CORS Error -->
+  <rect x="96" y="284" width="88" height="44" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
+  <text x="140" y="302" fill="#9a9ab8" font-size="13" text-anchor="middle" dominant-baseline="middle">Preflight fails</text>
+  <text x="140" y="318" fill="#9a9ab8" font-size="13" text-anchor="middle" dominant-baseline="middle">CORS Error</text>
 
 </svg>
 </div>
