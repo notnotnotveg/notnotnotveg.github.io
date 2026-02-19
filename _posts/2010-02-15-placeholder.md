@@ -433,82 +433,81 @@ tst3
 ### test5 
 test
 
-<div style="background:#0a0a0f; border:1px solid #222230; border-radius:10px; padding:24px 20px; margin:1.5em 0;">
-<svg
-  viewBox="0 0 560 480"
-  xmlns="http://www.w3.org/2000/svg"
-  style="width:100%; font-family:'Share Tech', sans-serif; display:block;"
->
-  <defs>
-    <marker id="arr" markerWidth="7" markerHeight="7" refX="3" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L6,3 z" fill="#4a4a6a"/>
-    </marker>
-  </defs>
+<div style="background:#0a0a0f; border:1px solid #222230; border-radius:10px; padding:28px 20px; margin:1.5em 0; font-family:'Share Tech', sans-serif;">
 
-  <!-- Page Loaded → Internal Resource Access Initiated -->
-  <line x1="280" y1="42" x2="280" y2="76" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Internal Resource Access Initiated → Port Probed -->
-  <line x1="280" y1="106" x2="280" y2="140" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Port Probed → fork stem -->
-  <line x1="280" y1="170" x2="280" y2="198" stroke="#4a4a6a" stroke-width="1.5"/>
-
-  <!-- Horizontal fork bar -->
-  <line x1="120" y1="198" x2="440" y2="198" stroke="#4a4a6a" stroke-width="1.5"/>
-
-  <!-- Left drop → User Prompted -->
-  <line x1="120" y1="198" x2="120" y2="224" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Right drop → Preflight fails Immediately -->
-  <line x1="440" y1="198" x2="440" y2="224" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- User Prompted → sub-fork stem -->
-  <line x1="120" y1="260" x2="120" y2="288" stroke="#4a4a6a" stroke-width="1.5"/>
-
-  <!-- Sub-fork horizontal bar -->
-  <line x1="56" y1="288" x2="184" y2="288" stroke="#4a4a6a" stroke-width="1.5"/>
-
-  <!-- Left drop → Preflight Sent -->
-  <line x1="56" y1="288" x2="56" y2="314" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Right drop → Preflight fails CORS Error -->
-  <line x1="184" y1="288" x2="184" y2="314" stroke="#4a4a6a" stroke-width="1.5" marker-end="url(#arr)"/>
-
-  <!-- Edge labels -->
-  <text x="76" y="218" fill="#6b6b88" font-size="12" text-anchor="middle">Port Open</text>
-  <text x="490" y="218" fill="#6b6b88" font-size="12" text-anchor="middle">Port Closed</text>
-  <text x="24" y="308" fill="#6b6b88" font-size="12" text-anchor="middle">Allow</text>
-  <text x="218" y="308" fill="#6b6b88" font-size="12" text-anchor="middle">Deny</text>
+  <style>
+    .fd { display:flex; flex-direction:column; align-items:center; width:100%; }
+    .fd-node { padding:8px 20px; border-radius:6px; border:1px solid #444458; background:#111115; color:#fff; font-size:14px; text-align:center; white-space:nowrap; }
+    .fd-node.accent { border-color:#39ff7e; color:#39ff7e; background:#0d1f14; }
+    .fd-node.dim { color:#9a9ab8; }
+    .fd-connector { width:2px; height:24px; background:#4a4a6a; }
+    .fd-row { display:flex; align-items:flex-start; justify-content:center; width:100%; gap:0; }
+    .fd-branch { display:flex; flex-direction:column; align-items:center; flex:1; }
+    .fd-hleft { width:50%; height:2px; background:#4a4a6a; align-self:flex-end; }
+    .fd-hright { width:50%; height:2px; background:#4a4a6a; align-self:flex-start; }
+    .fd-label { font-size:11px; color:#6b6b88; margin-bottom:4px; }
+    .fd-arrow { width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:6px solid #4a4a6a; }
+  </style>
 
   <!-- Page Loaded -->
-  <rect x="160" y="12" width="240" height="30" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
-  <text x="280" y="27" fill="#ffffff" font-size="14" text-anchor="middle" dominant-baseline="middle">Page Loaded</text>
+  <div class="fd">
+    <div class="fd-node">Page Loaded</div>
+    <div class="fd-connector"></div>
 
-  <!-- Internal Resource Access Initiated -->
-  <rect x="60" y="76" width="440" height="30" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
-  <text x="280" y="91" fill="#ffffff" font-size="14" text-anchor="middle" dominant-baseline="middle">Internal Resource Access Initiated</text>
+    <!-- Internal Resource Access Initiated -->
+    <div class="fd-node">Internal Resource Access Initiated</div>
+    <div class="fd-connector"></div>
 
-  <!-- Port Probed -->
-  <rect x="160" y="140" width="240" height="30" rx="5" fill="#0d1f14" stroke="#39ff7e" stroke-width="1.5"/>
-  <text x="280" y="155" fill="#39ff7e" font-size="14" text-anchor="middle" dominant-baseline="middle">Port Probed</text>
+    <!-- Port Probed -->
+    <div class="fd-node accent">Port Probed</div>
 
-  <!-- User Prompted -->
-  <rect x="28" y="224" width="184" height="36" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
-  <text x="120" y="242" fill="#ffffff" font-size="14" text-anchor="middle" dominant-baseline="middle">User Prompted</text>
+    <!-- Fork bar -->
+    <div style="display:flex; width:80%; align-items:flex-start; margin-top:0;">
+      <div style="flex:1; border-top:2px solid #4a4a6a; border-right:2px solid #4a4a6a; height:24px;"></div>
+      <div style="flex:1; border-top:2px solid #4a4a6a; border-left:2px solid #4a4a6a; height:24px;"></div>
+    </div>
 
-  <!-- Preflight fails - Immediately -->
-  <rect x="300" y="224" width="280" height="36" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
-  <text x="440" y="242" fill="#9a9ab8" font-size="14" text-anchor="middle" dominant-baseline="middle">Preflight fails - Immediately</text>
+    <!-- Fork row: User Prompted + Preflight fails Immediately -->
+    <div class="fd-row" style="width:80%; gap:16px; align-items:flex-start;">
 
-  <!-- Preflight Sent -->
-  <rect x="4" y="314" width="104" height="36" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
-  <text x="56" y="332" fill="#ffffff" font-size="14" text-anchor="middle" dominant-baseline="middle">Preflight Sent</text>
+      <!-- Left branch -->
+      <div class="fd-branch">
+        <div class="fd-label">Port Open</div>
+        <div class="fd-arrow"></div>
+        <div style="height:6px;"></div>
+        <div class="fd-node" style="width:100%; box-sizing:border-box;">User Prompted</div>
 
-  <!-- Preflight fails CORS Error -->
-  <rect x="122" y="314" width="124" height="50" rx="5" fill="#111115" stroke="#444458" stroke-width="1.5"/>
-  <text x="184" y="334" fill="#9a9ab8" font-size="14" text-anchor="middle" dominant-baseline="middle">Preflight fails</text>
-  <text x="184" y="354" fill="#9a9ab8" font-size="14" text-anchor="middle" dominant-baseline="middle">CORS Error</text>
+        <!-- Sub-fork -->
+        <div style="display:flex; width:80%; align-items:flex-start; margin-top:0;">
+          <div style="flex:1; border-top:2px solid #4a4a6a; border-right:2px solid #4a4a6a; height:24px;"></div>
+          <div style="flex:1; border-top:2px solid #4a4a6a; border-left:2px solid #4a4a6a; height:24px;"></div>
+        </div>
 
-</svg>
+        <div class="fd-row" style="width:80%; gap:12px; align-items:flex-start;">
+          <div class="fd-branch">
+            <div class="fd-label">Allow</div>
+            <div class="fd-arrow"></div>
+            <div style="height:6px;"></div>
+            <div class="fd-node" style="width:100%; box-sizing:border-box;">Preflight Sent</div>
+          </div>
+          <div class="fd-branch">
+            <div class="fd-label">Deny</div>
+            <div class="fd-arrow"></div>
+            <div style="height:6px;"></div>
+            <div class="fd-node dim" style="width:100%; box-sizing:border-box; white-space:normal;">Preflight fails<br>CORS Error</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right branch -->
+      <div class="fd-branch">
+        <div class="fd-label">Port Closed</div>
+        <div class="fd-arrow"></div>
+        <div style="height:6px;"></div>
+        <div class="fd-node dim" style="width:100%; box-sizing:border-box;">Preflight fails - Immediately</div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
