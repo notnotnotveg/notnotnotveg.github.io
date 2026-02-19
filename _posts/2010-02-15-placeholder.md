@@ -139,7 +139,7 @@ test
 test
 
 ### Test 3
-test
+test2
 <style>
 .lna-browsers {
   width: 100%;
@@ -153,7 +153,7 @@ test
 }
 .lna-browsers thead th {
   padding: 10px 14px;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #6b6b88;
@@ -171,8 +171,8 @@ test
   background: #111115;
 }
 .lna-browsers td {
-  padding: 11px 14px;
-  font-size: 0.88em;
+  padding: 13px 14px;
+  font-size: 15px;
   color: #d4d4e8;
   vertical-align: middle;
 }
@@ -182,19 +182,19 @@ test
   white-space: nowrap;
 }
 .lna-browsers .version {
-  color: #6b6b88;
-  font-size: 0.82em;
+  color: #9a9ab8;
+  font-size: 13px;
 }
 .lna-browsers .status-full {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.8em;
+  font-size: 14px;
   color: #39ff7e;
 }
 .lna-browsers .status-full::before {
   content: '';
-  width: 6px; height: 6px;
+  width: 7px; height: 7px;
   border-radius: 50%;
   background: #39ff7e;
   box-shadow: 0 0 6px rgba(57,255,126,0.6);
@@ -204,12 +204,12 @@ test
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.8em;
+  font-size: 14px;
   color: #ff9f43;
 }
 .lna-browsers .status-trial::before {
   content: '';
-  width: 6px; height: 6px;
+  width: 7px; height: 7px;
   border-radius: 50%;
   background: #ff9f43;
   box-shadow: 0 0 6px rgba(255,159,67,0.6);
@@ -219,14 +219,14 @@ test
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 0.8em;
-  color: #3a3a50;
+  font-size: 14px;
+  color: #6b6b88;
 }
 .lna-browsers .status-none::before {
   content: '';
-  width: 6px; height: 6px;
+  width: 7px; height: 7px;
   border-radius: 50%;
-  background: #3a3a50;
+  background: #6b6b88;
   flex-shrink: 0;
 }
 </style>
