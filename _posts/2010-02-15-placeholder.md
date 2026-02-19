@@ -429,3 +429,212 @@ test
 </div>
 
 tst3
+
+### test5 
+test
+<style>
+.lna-diagram {
+  font-family: 'Share Tech', sans-serif;
+  padding: 32px 24px;
+  background: #0a0a0f;
+  border: 1px solid #222230;
+  border-radius: 10px;
+  margin: 1.5em 0;
+  overflow-x: auto;
+}
+.lna-diagram .d-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  min-width: 480px;
+}
+/* Nodes */
+.lna-diagram .d-node {
+  padding: 9px 20px;
+  border-radius: 24px;
+  border: 1px solid #222230;
+  background: #18181f;
+  color: #d4d4e8;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+.lna-diagram .d-node.start    { border-color: #e8ff47; color: #e8ff47; background: rgba(232,255,71,0.06); }
+.lna-diagram .d-node.open     { border-color: #ff9f43; color: #ff9f43; background: rgba(255,159,67,0.06); }
+.lna-diagram .d-node.allow    { border-color: #39ff7e; color: #39ff7e; background: rgba(57,255,126,0.06); }
+.lna-diagram .d-node.fail     { border-color: #ff4757; color: #ff4757; background: rgba(255,71,87,0.06); }
+/* Connectors */
+.lna-diagram .d-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.lna-diagram .d-arrow .d-line {
+  width: 2px;
+  height: 24px;
+  background: #222230;
+}
+.lna-diagram .d-arrow .d-label {
+  font-size: 11px;
+  color: #6b6b88;
+  margin: 2px 0;
+}
+.lna-diagram .d-arrow .d-chevron {
+  width: 0; height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #222230;
+}
+/* Split row for fork */
+.lna-diagram .d-fork {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+}
+.lna-diagram .d-fork-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Horizontal connector line across fork */
+.lna-diagram .d-hline-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height: 24px;
+}
+.lna-diagram .d-hline {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background: #222230;
+}
+.lna-diagram .d-hline-left  { right: 50%; width: 22%; }
+.lna-diagram .d-hline-right { left: 50%;  width: 22%; }
+.lna-diagram .d-vline-down {
+  width: 2px;
+  background: #222230;
+}
+.lna-diagram .d-vline-down.left  { height: 24px; position: absolute; right: calc(50% - 22%); top: 0; }
+.lna-diagram .d-vline-down.right { height: 24px; position: absolute; left:  calc(50% + 22%); top: 0; }
+/* Second fork (Allow / Deny) */
+.lna-diagram .d-fork2-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  position: relative;
+  height: 24px;
+}
+.lna-diagram .d-fork2-hline-left  { position: absolute; top: 0; height: 2px; background: #222230; right: 50%; width: 30%; }
+.lna-diagram .d-fork2-hline-right { position: absolute; top: 0; height: 2px; background: #222230; left: 50%;  width: 30%; }
+.lna-diagram .d-fork2-vline-left  { position: absolute; top: 0; height: 24px; width: 2px; background: #222230; right: calc(50% - 30%); }
+.lna-diagram .d-fork2-vline-right { position: absolute; top: 0; height: 24px; width: 2px; background: #222230; left:  calc(50% + 30%); }
+.lna-diagram .d-fork2-branches {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  gap: 60px;
+}
+.lna-diagram .d-fork2-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
+
+<div class="lna-diagram">
+  <div class="d-graph">
+
+    <!-- Page Loaded -->
+    <div class="d-node start">Page Loaded</div>
+
+    <!-- Arrow down -->
+    <div class="d-arrow">
+      <div class="d-line"></div>
+      <div class="d-chevron"></div>
+    </div>
+
+    <!-- Internal Resource Access Initiated -->
+    <div class="d-node">Internal Resource Access Initiated</div>
+
+    <!-- Arrow down -->
+    <div class="d-arrow">
+      <div class="d-line"></div>
+      <div class="d-chevron"></div>
+    </div>
+
+    <!-- Port Probed -->
+    <div class="d-node">Port Probed</div>
+
+    <!-- Fork: Port Open / Port Closed -->
+    <div style="width:100%; position:relative;">
+
+      <!-- Horizontal bar -->
+      <div class="d-hline-wrap">
+        <div class="d-hline d-hline-left"></div>
+        <div class="d-hline d-hline-right"></div>
+        <div class="d-vline-down left"></div>
+        <div class="d-vline-down right"></div>
+      </div>
+
+      <!-- Two branches -->
+      <div class="d-fork">
+
+        <!-- Left: Port Open -->
+        <div class="d-fork-branch" style="width:50%; align-items:center;">
+          <div class="d-arrow">
+            <div class="d-label">Port Open</div>
+            <div class="d-chevron"></div>
+          </div>
+          <div class="d-node open">User Prompted</div>
+
+          <!-- Sub-fork: Allow / Deny -->
+          <div style="width:100%; position:relative; display:flex; flex-direction:column; align-items:center;">
+            <div class="d-fork2-wrap">
+              <div class="d-fork2-hline-left"></div>
+              <div class="d-fork2-hline-right"></div>
+              <div class="d-fork2-vline-left"></div>
+              <div class="d-fork2-vline-right"></div>
+            </div>
+            <div class="d-fork2-branches">
+              <div class="d-fork2-branch">
+                <div class="d-arrow">
+                  <div class="d-label">Allow</div>
+                  <div class="d-chevron"></div>
+                </div>
+                <div class="d-node allow">Preflight Sent</div>
+              </div>
+              <div class="d-fork2-branch">
+                <div class="d-arrow">
+                  <div class="d-label">Deny</div>
+                  <div class="d-chevron"></div>
+                </div>
+                <div class="d-node fail">Preflight fails<br>CORS Error</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Port Closed -->
+        <div class="d-fork-branch" style="width:50%; align-items:center;">
+          <div class="d-arrow">
+            <div class="d-label">Port Closed</div>
+            <div class="d-chevron"></div>
+          </div>
+          <div class="d-node fail">Preflight fails - Immediately</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
