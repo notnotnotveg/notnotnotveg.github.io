@@ -51,16 +51,16 @@ test
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  width: 16px;
+  width: 20px;
 }
 .lna-flow .flow-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   border: 2px solid #3a3a50;
   background: #18181f;
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 .lna-flow .flow-dot.accent  { background: #e8ff47; border-color: #e8ff47; box-shadow: 0 0 8px rgba(232,255,71,0.5); }
 .lna-flow .flow-dot.warning { background: #ff9f43; border-color: #ff9f43; box-shadow: 0 0 8px rgba(255,159,67,0.5); }
@@ -72,22 +72,22 @@ test
   min-height: 16px;
 }
 .lna-flow .flow-body {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 .lna-flow li:last-child .flow-body {
   padding-bottom: 0;
 }
 .lna-flow .flow-title {
-  font-size: 0.95em;
+  font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   line-height: 1.3;
 }
 .lna-flow .flow-desc {
-  font-size: 0.78em;
-  color: #6b6b88;
-  margin-top: 2px;
-  line-height: 1.4;
+  font-size: 13px;
+  color: #9a9ab8;
+  margin-top: 3px;
+  line-height: 1.5;
 }
 </style>
 
