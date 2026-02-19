@@ -271,6 +271,7 @@ test
 
 ### Test 4
 test
+
 <style>
 .lna-timing {
   width: 100%;
@@ -282,7 +283,7 @@ test
 }
 .lna-timing .header {
   font-family: 'Share Tech', sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #6b6b88;
@@ -300,9 +301,9 @@ test
   font-family: 'Share Tech', sans-serif;
   line-height: 1.5;
 }
-.lna-timing .row-label .state { display: block; font-size: 9px; color: #6b6b88; }
-.lna-timing .row-label .value-open  { font-size: 11px; color: #ff9f43; font-weight: 700; }
-.lna-timing .row-label .value-closed { font-size: 11px; color: #39ff7e; font-weight: 700; }
+.lna-timing .row-label .state { display: block; font-size: 10px; color: #6b6b88; }
+.lna-timing .row-label .value-open  { font-size: 13px; color: #ff9f43; font-weight: 700; }
+.lna-timing .row-label .value-closed { font-size: 13px; color: #39ff7e; font-weight: 700; }
 .lna-timing .track-wrap { flex: 1; position: relative; }
 .lna-timing .track {
   width: 100%; height: 28px;
@@ -321,7 +322,7 @@ test
 .lna-timing .bar-closed-label {
   position: absolute; left: calc(1.5% + 8px);
   top: 50%; transform: translateY(-50%);
-  font-size: 9px; color: #39ff7e; white-space: nowrap;
+  font-size: 11px; color: #39ff7e; white-space: nowrap;
 }
 .lna-timing .bar-open {
   position: absolute; left: 0; top: 0;
@@ -333,7 +334,7 @@ test
 .lna-timing .bar-open-label {
   position: absolute; left: 10px;
   top: 50%; transform: translateY(-50%);
-  font-size: 9px; color: #ff9f43; white-space: nowrap;
+  font-size: 11px; color: #ff9f43; white-space: nowrap;
 }
 .lna-timing .arrow {
   position: absolute; right: -10px; top: 50%; transform: translateY(-50%);
@@ -344,7 +345,7 @@ test
 }
 .lna-timing .badge {
   flex-shrink: 0; padding: 2px 8px;
-  border-radius: 4px; font-size: 9px; font-weight: 700; white-space: nowrap;
+  border-radius: 4px; font-size: 11px; font-weight: 700; white-space: nowrap;
 }
 .lna-timing .badge-open  { background: rgba(255,159,67,0.1); border: 1px solid rgba(255,159,67,0.35); color: #ff9f43; }
 .lna-timing .badge-closed { background: rgba(57,255,126,0.1); border: 1px solid rgba(57,255,126,0.35); color: #39ff7e; }
@@ -362,7 +363,7 @@ test
   transform: translateX(-50%);
 }
 .lna-timing .tick-line { width: 1px; height: 5px; background: #3a3a50; }
-.lna-timing .tick-label { font-family: 'Share Tech', sans-serif; font-size: 7.5px; color: #3a3a50; margin-top: 2px; white-space: nowrap; }
+.lna-timing .tick-label { font-family: 'Share Tech', sans-serif; font-size: 9px; color: #3a3a50; margin-top: 2px; white-space: nowrap; }
 .lna-timing .tick-label.threshold-label { color: rgba(255,255,255,0.2); }
 .lna-timing .threshold-line {
   position: absolute; left: calc(1.5% + 72px + 10px);
@@ -374,7 +375,7 @@ test
   margin-top: 14px; padding-top: 10px;
   border-top: 1px solid #222230;
   font-family: 'Share Tech', sans-serif;
-  font-size: 9px; color: #3a3a50; line-height: 1.5;
+  font-size: 11px; color: #3a3a50; line-height: 1.5;
 }
 </style>
 
@@ -426,4 +427,5 @@ test
     Any response beyond a few milliseconds indicates an open port — the 2s abort timeout used in the PoC is a practical scan cutoff, not the detection threshold.
   </div>
 </div>
-tst
+
+tst2
