@@ -283,7 +283,7 @@ test
 }
 .lna-timing .header {
   font-family: 'Share Tech', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #6b6b88;
@@ -296,17 +296,17 @@ test
   margin-bottom: 10px;
 }
 .lna-timing .row-label {
-  width: 72px;
+  width: 80px;
   flex-shrink: 0;
   font-family: 'Share Tech', sans-serif;
   line-height: 1.5;
 }
-.lna-timing .row-label .state { display: block; font-size: 10px; color: #6b6b88; }
-.lna-timing .row-label .value-open  { font-size: 13px; color: #ff9f43; font-weight: 700; }
-.lna-timing .row-label .value-closed { font-size: 13px; color: #39ff7e; font-weight: 700; }
+.lna-timing .row-label .state { display: block; font-size: 13px; color: #6b6b88; }
+.lna-timing .row-label .value-open  { font-size: 16px; color: #ff9f43; font-weight: 700; }
+.lna-timing .row-label .value-closed { font-size: 16px; color: #39ff7e; font-weight: 700; }
 .lna-timing .track-wrap { flex: 1; position: relative; }
 .lna-timing .track {
-  width: 100%; height: 28px;
+  width: 100%; height: 32px;
   background: #18181f;
   border-radius: 4px;
   position: relative;
@@ -322,7 +322,7 @@ test
 .lna-timing .bar-closed-label {
   position: absolute; left: calc(1.5% + 8px);
   top: 50%; transform: translateY(-50%);
-  font-size: 11px; color: #39ff7e; white-space: nowrap;
+  font-size: 13px; color: #39ff7e; white-space: nowrap;
 }
 .lna-timing .bar-open {
   position: absolute; left: 0; top: 0;
@@ -334,7 +334,7 @@ test
 .lna-timing .bar-open-label {
   position: absolute; left: 10px;
   top: 50%; transform: translateY(-50%);
-  font-size: 11px; color: #ff9f43; white-space: nowrap;
+  font-size: 13px; color: #ff9f43; white-space: nowrap;
 }
 .lna-timing .arrow {
   position: absolute; right: -10px; top: 50%; transform: translateY(-50%);
@@ -344,15 +344,15 @@ test
   border-left: 9px solid #ff9f43;
 }
 .lna-timing .badge {
-  flex-shrink: 0; padding: 2px 8px;
-  border-radius: 4px; font-size: 11px; font-weight: 700; white-space: nowrap;
+  flex-shrink: 0; padding: 3px 10px;
+  border-radius: 4px; font-size: 13px; font-weight: 700; white-space: nowrap;
 }
 .lna-timing .badge-open  { background: rgba(255,159,67,0.1); border: 1px solid rgba(255,159,67,0.35); color: #ff9f43; }
 .lna-timing .badge-closed { background: rgba(57,255,126,0.1); border: 1px solid rgba(57,255,126,0.35); color: #39ff7e; }
 .lna-timing .axis-row { display: flex; align-items: flex-start; gap: 10px; margin-top: 4px; }
-.lna-timing .axis-spacer { width: 72px; flex-shrink: 0; }
-.lna-timing .axis-badge-spacer { width: 58px; flex-shrink: 0; }
-.lna-timing .axis { flex: 1; position: relative; height: 28px; }
+.lna-timing .axis-spacer { width: 80px; flex-shrink: 0; }
+.lna-timing .axis-badge-spacer { width: 66px; flex-shrink: 0; }
+.lna-timing .axis { flex: 1; position: relative; height: 32px; }
 .lna-timing .axis::before {
   content: ''; position: absolute;
   top: 0; left: 0; right: 0; height: 1px; background: #3a3a50;
@@ -363,10 +363,10 @@ test
   transform: translateX(-50%);
 }
 .lna-timing .tick-line { width: 1px; height: 5px; background: #3a3a50; }
-.lna-timing .tick-label { font-family: 'Share Tech', sans-serif; font-size: 9px; color: #3a3a50; margin-top: 2px; white-space: nowrap; }
+.lna-timing .tick-label { font-family: 'Share Tech', sans-serif; font-size: 11px; color: #3a3a50; margin-top: 2px; white-space: nowrap; }
 .lna-timing .tick-label.threshold-label { color: rgba(255,255,255,0.2); }
 .lna-timing .threshold-line {
-  position: absolute; left: calc(1.5% + 72px + 10px);
+  position: absolute; left: calc(1.5% + 80px + 10px);
   top: 0; bottom: 0; width: 1px;
   border-left: 1px dashed rgba(255,255,255,0.2);
   pointer-events: none;
@@ -375,7 +375,7 @@ test
   margin-top: 14px; padding-top: 10px;
   border-top: 1px solid #222230;
   font-family: 'Share Tech', sans-serif;
-  font-size: 11px; color: #3a3a50; line-height: 1.5;
+  font-size: 13px; color: #3a3a50; line-height: 1.5;
 }
 </style>
 
@@ -428,4 +428,4 @@ test
   </div>
 </div>
 
-tst2
+tst3
