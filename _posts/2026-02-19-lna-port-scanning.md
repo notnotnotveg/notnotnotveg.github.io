@@ -585,7 +585,7 @@ It is worth stating directly: LNA's prompt was never intended to prevent port di
 
 ## Summary 
 
-LNA's TCP probe, the mechanism that decides _whether to show the prompt_, runs before the user sees anything. That probe leaks port state. Open ports stall; closed ports reject instantly. The delta is measurable from JavaScript with no special permissions.
+LNA's TCP probe, the mechanism that decides _whether to show the prompt_, runs before the user sees anything. That probe leaks port state. Open ports stall, closed ports reject instantly. The delta is measurable from JavaScript with no special permissions.
 
 Allow, Block, or ignore : it doesn't matter. By the time the prompt appears, the scan is already done.
 
