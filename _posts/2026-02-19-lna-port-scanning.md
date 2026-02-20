@@ -12,6 +12,24 @@ toc_label: "LNA"
 toc_icon: "web"
 ---
 
+<style>
+.page__content pre,
+.page__content code {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.lna-timing { overflow-x: auto; }
+.lna-timing .bar-open-label,
+.lna-timing .bar-closed-label {
+  white-space: normal;
+  font-size: 10px;
+}
+.lna-browsers { display: block; overflow-x: auto; }
+.mermaid { overflow-x: auto; max-width: 100%; }
+</style>
+
 Is it possible ? Yes.
 How ?
 
