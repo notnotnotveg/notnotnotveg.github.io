@@ -508,8 +508,6 @@ The malicious page does not need the user to click Allow or Block. The timing de
 
 ### State of LNA Prompt vs. Port State
 
-State of LNA Prompt vs. Port State
-
 <div style="display:flex; justify-content:center; margin:1.5em 0;">
   <table>
     <thead>
@@ -527,7 +525,7 @@ State of LNA Prompt vs. Port State
 </div>
 
 
-Based on this  its safe to say that LNA may be intended to protect knowledge of such port states when the user "Blocks" LNA.
+Based on this  its safe to say that LNA may be **intended** to protect knowledge of such port states when the user "Blocks" LNA.
 
 
 ## Proof of Concept
