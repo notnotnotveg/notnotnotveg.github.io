@@ -560,10 +560,10 @@ fetch(`http://localhost:${port}`, { mode: "no-cors", signal: c.signal })
 
 ### Scaling to the Full Port Range
 An optimized version can sweep the full 65,535 TCP port range using batched, concurrent fetches with tuned abort timing can be found here : 
-https://raw.githubusercontent.com/notnotnotveg/notnotnotveg.github.io/refs/heads/master/raw-html-tests/scanner-all.html
 
-**[Source](https://raw.githubusercontent.com/notnotnotveg/notnotnotveg.github.io/refs/heads/master/raw-html-tests/scanner-all.html) 
-[Live demo](https://wiki.notveg.ninja/raw-html-tests/scanner-all.html)**
+**[Source](https://raw.githubusercontent.com/notnotnotveg/notnotnotveg.github.io/refs/heads/master/raw-html-tests/scanner-all.html)**
+
+**[Live demo](https://wiki.notveg.ninja/raw-html-tests/scanner-all.html)**
 
 An example run:
 
