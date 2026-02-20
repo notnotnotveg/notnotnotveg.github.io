@@ -516,18 +516,39 @@ test
 
 
 
+
 <style>
-  .mermaid svg { font-family: 'Share Tech', sans-serif !important; font-size: 16px !important; }
-  .mermaid .label { font-family: 'Share Tech', sans-serif !important; font-size: 16px !important; }
-  .mermaid span { font-family: 'Share Tech', sans-serif !important; font-size: 16px !important; }
+  .mermaid svg text,
+  .mermaid svg .nodeLabel,
+  .mermaid svg .edgeLabel,
+  .mermaid svg .cluster-label,
+  .mermaid svg span {
+    font-family: 'Share Tech', sans-serif !important;
+    font-size: 16px !important;
+  }
 </style>
 
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({
+  startOnLoad: true,
+  theme: 'dark',
+  flowchart: { useMaxWidth: false },
+  themeVariables: {
+    fontFamily: 'Share Tech, sans-serif',
+    fontSize: '16px',
+    primaryColor: '#111115',
+    primaryBorderColor: '#444458',
+    primaryTextColor: '#ffffff',
+    lineColor: '#4a4a6a',
+    edgeLabelBackground: '#0c0c0e'
+  }
+});
+</script>
 
-<div style="display:flex; justify-content:center; margin: 1.5em 0;">
-<div class="mermaid">
-%%{init: {'theme': 'dark', 'themeVariables': {'fontFamily': 'Share Tech, sans-serif', 'fontSize': '16px', 'primaryColor': '#111115', 'primaryBorderColor': '#444458', 'primaryTextColor': '#ffffff', 'lineColor': '#4a4a6a', 'edgeLabelBackground': '#0c0c0e', 'tertiaryColor': '#0c0c0e'}}}%%
+<div style="display:flex; justify-content:center; margin:1.5em 0;">
+<div class="mermaid" style="min-width:500px;">
+%%{init: {'theme': 'dark', 'themeVariables': {'fontFamily': 'Share Tech, sans-serif', 'fontSize': '16px'}}}%%
 graph TD;
     id(Page Loaded) --> id1(Internal Resource Access Initiated)
     id1 --> id2(Port Probed)
