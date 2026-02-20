@@ -9,7 +9,6 @@ tags:
 toc: True
 toc_label: "LNA"
 toc_icon: "web"
-mermaid: true
 ---
 
 ### Test 1
@@ -520,7 +519,9 @@ test
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 
-<div class="mermaid">
+<div style="display:flex; justify-content:center; margin: 1.5em 0;">
+<div class="mermaid" style="font-family:'Share Tech', sans-serif;">
+%%{init: {'theme': 'dark', 'themeVariables': {'fontFamily': 'Share Tech, sans-serif', 'fontSize': '16px', 'primaryColor': '#111115', 'primaryBorderColor': '#444458', 'primaryTextColor': '#ffffff', 'lineColor': '#4a4a6a', 'edgeLabelBackground': '#0c0c0e', 'tertiaryColor': '#0c0c0e'}}}%%
 graph TD;
     id(Page Loaded) --> id1(Internal Resource Access Initiated)
     id1 --> id2(Port Probed)
@@ -528,4 +529,5 @@ graph TD;
     id2 -->|Port Closed| id4(Preflight fails - Immediately)
     id3 -->|Allow| id5(Preflight Sent)
     id3 -->|Deny| id6(Preflight fails CORS Error)
+</div>
 </div>
