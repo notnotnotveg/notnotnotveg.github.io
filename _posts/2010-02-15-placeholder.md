@@ -511,3 +511,24 @@ test
   </div>
 
 </div>
+
+
+
+
+```mermaid
+
+graph TD;
+
+    id(Page Loaded) -->id1(Internal Resource Access)
+
+    id1(Internal Resource Access Initiated) --> id2(Port Probed)
+
+    id2(Port Probed) -->|Port Open| id3(User Prompted)
+
+    id2(Port Probed)-->|Port Closed| id4(Preflight fails - Immediately)
+
+    id3(User Prompted)-->|Allow| id5(Preflight Sent)
+
+    id3(User Prompted)-->|Deny|id6(Preflight fails<br>CORS Error)
+
+```
