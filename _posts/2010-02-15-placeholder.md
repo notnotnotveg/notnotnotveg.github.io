@@ -516,11 +516,17 @@ test
 
 
 
+<style>
+  .mermaid svg { font-family: 'Share Tech', sans-serif !important; font-size: 16px !important; }
+  .mermaid .label { font-family: 'Share Tech', sans-serif !important; font-size: 16px !important; }
+  .mermaid span { font-family: 'Share Tech', sans-serif !important; font-size: 16px !important; }
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 
 <div style="display:flex; justify-content:center; margin: 1.5em 0;">
-<div class="mermaid" style="font-family:'Share Tech', sans-serif;">
+<div class="mermaid">
 %%{init: {'theme': 'dark', 'themeVariables': {'fontFamily': 'Share Tech, sans-serif', 'fontSize': '16px', 'primaryColor': '#111115', 'primaryBorderColor': '#444458', 'primaryTextColor': '#ffffff', 'lineColor': '#4a4a6a', 'edgeLabelBackground': '#0c0c0e', 'tertiaryColor': '#0c0c0e'}}}%%
 graph TD;
     id(Page Loaded) --> id1(Internal Resource Access Initiated)
