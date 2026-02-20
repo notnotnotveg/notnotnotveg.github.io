@@ -572,7 +572,7 @@ An example run:
 </a>
 
 
-### Implications 
+## Implications 
 
 Port scanning via browsers is not new. What LNA changes is the _quality_ of the signal. The LNA probe is a deliberate TCP handshake with a binary outcome, producing a clean, reliable timing split.
 
