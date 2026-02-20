@@ -46,7 +46,7 @@ How ?
   </iframe>
 </div>
 
-Because in this case… timing is everything.
+Because in this case… **timing** is everything.
 
 ## Background
 
