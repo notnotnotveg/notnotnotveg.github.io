@@ -9,6 +9,7 @@ tags:
 toc: True
 toc_label: "LNA"
 toc_icon: "web"
+mermaid: true
 ---
 
 ### Test 1
@@ -513,10 +514,8 @@ test
 </div>
 
 
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 
 ```mermaid
 
