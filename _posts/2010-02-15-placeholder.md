@@ -514,23 +514,18 @@ test
 </div>
 
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
 
-```mermaid
-
+<div class="mermaid">
 graph TD;
-
-    id(Page Loaded) -->id1(Internal Resource Access)
-
-    id1(Internal Resource Access Initiated) --> id2(Port Probed)
-
-    id2(Port Probed) -->|Port Open| id3(User Prompted)
-
-    id2(Port Probed)-->|Port Closed| id4(Preflight fails - Immediately)
-
-    id3(User Prompted)-->|Allow| id5(Preflight Sent)
-
-    id3(User Prompted)-->|Deny|id6(Preflight fails<br>CORS Error)
-
-```
+    id(Page Loaded) --> id1(Internal Resource Access Initiated)
+    id1 --> id2(Port Probed)
+    id2 -->|Port Open| id3(User Prompted)
+    id2 -->|Port Closed| id4(Preflight fails - Immediately)
+    id3 -->|Allow| id5(Preflight Sent)
+    id3 -->|Deny| id6(Preflight fails CORS Error)
+</div>
