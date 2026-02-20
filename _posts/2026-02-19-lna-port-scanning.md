@@ -511,13 +511,19 @@ The malicious page does not need the user to click Allow or Block. The timing de
 State of LNA Prompt vs. Port State
 
 <div style="display:flex; justify-content:center; margin:1.5em 0;">
-
-| Prompt State | Port State |
-| --- | --- |
-| "Allow" | Port can be probed |
-| "Block" | Port cannot be probed |
-| Pending prompt | Port can be probed |
-
+  <table>
+    <thead>
+      <tr>
+        <th>Prompt State</th>
+        <th>Port State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>"Allow"</td><td>Port can be probed</td></tr>
+      <tr><td>"Block"</td><td>Port cannot be probed</td></tr>
+      <tr><td>Pending prompt</td><td>Port can be probed</td></tr>
+    </tbody>
+  </table>
 </div>
 
 
