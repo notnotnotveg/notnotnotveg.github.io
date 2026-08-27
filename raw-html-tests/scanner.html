@@ -32,7 +32,7 @@
     <script>
         async function useFetch() {
             document.getElementById('results').innerHTML = '';
-            const h=prompt("Host:","localhost");const r=await Promise.all(Array.from({length:1000},(_,i)=>30000+i).map(async p=>{const c=new AbortController();setTimeout(()=>c.abort(),2000);const t=Date.now();try{await fetch(`http://${h}:${p}`,{mode:'no-cors',signal:c.signal});return{p,s:'open',t:Date.now()-t}}catch(e){return{p,s:e.name==='AbortError'?'Open due to timeout':'closed',t:Date.now()-t}}}));r.filter(x=>x.s!=='closed').forEach(x=>(document.getElementById('results').innerHTML+=`Port ${x.p}: ${x.s} (${x.t}ms)<br>`));return r;
+            const h=prompt("Host:","localhost");const r=await Promise.all(Array.from({length:1000},(_,i)=>30000+i).map(async p=>{const c=new AbortController();setTimeout(()=>c.abort(),2000);const t=Date.now();try{await fetch(`https://${h}:${p}`,{mode:'no-cors',signal:c.signal});return{p,s:'open',t:Date.now()-t}}catch(e){return{p,s:e.name==='AbortError'?'Open due to timeout':'closed',t:Date.now()-t}}}));r.filter(x=>x.s!=='closed').forEach(x=>(document.getElementById('results').innerHTML+=`Port ${x.p}: ${x.s} (${x.t}ms)<br>`));return r;
         }
 
         async function useXHR() {
