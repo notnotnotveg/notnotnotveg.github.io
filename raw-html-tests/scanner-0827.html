@@ -36,7 +36,7 @@ async function useFetch() {
     const batchSize = 500; // Adjust this number based on performance
     const allResults = [];
     
-    for (let start = 0; start < 65536; start += batchSize) {
+    for (let start = 29999; start < 30001; start += batchSize) {
         const end = Math.min(start + batchSize, 65536);
         // document.getElementById('results').innerHTML += `<p>Scanning ports ${start}-${end}...</p>`;
         
